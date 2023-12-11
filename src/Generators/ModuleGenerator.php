@@ -537,7 +537,7 @@ class ModuleGenerator extends Generator
 
     public function getLowerSnakeNameReplacement()
     {
-        return str($this->getName())->lower()->snake()->toString();
+        return str($this->name)->lower()->snake()->toString();
     }
 
     /**
