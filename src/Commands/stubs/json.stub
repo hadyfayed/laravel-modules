@@ -1,4 +1,7 @@
 {
+    "id": "$LOWER_SNAKE_NAME$",
+    "title": "$STUDLY_NAME$",
+    "version": 0.1,
     "name": "$STUDLY_NAME$",
     "alias": "$LOWER_NAME$",
     "description": "",

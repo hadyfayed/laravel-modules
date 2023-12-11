@@ -126,7 +126,7 @@ class ModelMakeCommand extends GeneratorCommand
             ]));
         }
     }
-    
+
     /**
      * Create a seeder file for the model.
      *
@@ -189,6 +189,7 @@ class ModelMakeCommand extends GeneratorCommand
             'NAMESPACE'         => $this->getClassNamespace($module),
             'CLASS'             => $this->getClass(),
             'LOWER_NAME'        => $module->getLowerName(),
+            'LOWER_SNAKE_NAME'  => $module->getLowerSnakeName(),
             'MODULE'            => $this->getModuleName(),
             'STUDLY_NAME'       => $module->getStudlyName(),
             'MODULE_NAMESPACE'  => $this->laravel['modules']->config('namespace'),

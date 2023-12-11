@@ -82,6 +82,7 @@ class ComponentClassMakeCommand extends GeneratorCommand
             'NAMESPACE'         => $this->getClassNamespace($module),
             'CLASS'             => $this->getClass(),
             'LOWER_NAME'        => $module->getLowerName(),
+            'LOWER_SNAKE_NAME'  => $module->getLowerSnakeName(),
             'COMPONENT_NAME'    => 'components.' . Str::lower($this->argument('name')),
         ]))->render();
     }

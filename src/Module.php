@@ -140,6 +140,16 @@ abstract class Module
     }
 
     /**
+     * Get name in snake case.
+     *
+     * @return string
+     */
+    public function getLowerSnakeName(): string
+    {
+        return str($this->name)->lower()->snake();
+    }
+
+    /**
      * Get description.
      *
      * @return string
@@ -157,6 +167,26 @@ abstract class Module
     public function getPriority(): string
     {
         return $this->get('priority');
+    }
+
+    /**
+     * Get version.
+     *
+     * @return string
+     */
+    public function getVersion(): string
+    {
+        return $this->get('version');
+    }
+
+    /**
+     * Get id.
+     *
+     * @return string
+     */
+    public function getID(): string
+    {
+        return $this->get('id');
     }
 
     /**
