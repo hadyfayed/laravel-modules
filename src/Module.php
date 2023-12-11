@@ -146,7 +146,7 @@ abstract class Module
      */
     public function getLowerSnakeName(): string
     {
-        return str($this->name)->lower()->snake();
+        return str($this->name)->lower()->snake()->toString();
     }
 
     public function getLowerSnakeNameReplacement(): string{
