@@ -149,10 +149,6 @@ abstract class Module
         return str($this->name)->lower()->snake()->toString();
     }
 
-    public function getLowerSnakeNameReplacement(): string{
-        return $this->getLowerSnakeName();
-    }
-
     /**
      * Get description.
      *

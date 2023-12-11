@@ -535,6 +535,11 @@ class ModuleGenerator extends Generator
         return strtolower($this->getName());
     }
 
+    public function getLowerSnakeNameReplacement()
+    {
+        return str($this->getName())->lower()->snake()->toString();
+    }
+
     /**
      * Get the module name in studly case.
      *
